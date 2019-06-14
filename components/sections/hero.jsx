@@ -39,7 +39,7 @@ const Hero = () => (
                                 style={{ width: '50px' }}
                             />
                             <div>
-                                <Button className="border-white text-white hover:bg-white hover:text-black">
+                                <Button className="border-white bg-white text-black hover:bg-transparent hover:text-white">
                                     <span className="font-headline mr-2">
                                         ชมรมในคณะวิศวกรรมศาสตร์
                                     </span>
