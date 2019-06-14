@@ -15,7 +15,8 @@ const Hero = () => (
                 filter: brightness(0) invert(1);
             }
             #hero {
-                height: 800px;
+                min-height: 600px;
+                height: 100vh;
             }
         `}</style>
         <section className="text-white">
