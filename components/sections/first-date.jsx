@@ -1,6 +1,7 @@
 import SectionTitle from '../section-title'
 import View from '../view'
 import classNames from 'classnames'
+import { FiCalendar } from 'react-icons/fi'
 
 const Agenda = ({ start, end, name, className }) => (
     <div className={classNames('w-full bg-white rounded-lg shadow-2xl', className)}>
@@ -47,7 +48,7 @@ const FirstDate = () => {
     return (
         <section className="bg-gray-100 py-20">
             <View>
-                <SectionTitle en="FIRST DATE" th="วันแรกพบ" />
+                <SectionTitle en="FIRST DATE" th="วันแรกพบ" icon={<FiCalendar />} />
                 {renderSchedule()}
             </View>
         </section>
