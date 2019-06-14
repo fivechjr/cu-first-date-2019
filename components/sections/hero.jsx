@@ -24,15 +24,19 @@ const Hero = () => (
                     <div id="hero" className="w-full flex justify-center items-center">
                         <div className="flex flex-col">
                             <div className="mb-5">
-                                <img src="/static/cu-eng-logo.png" alt="Chula Engineering" />
+                                <img
+                                    className="opacity-50"
+                                    src="/static/cu-eng-logo.png"
+                                    alt="Chula Engineering"
+                                />
                             </div>
                             <div className="text-5xl font-headline leading-none mb-5 tracking-wide">
-                                <span className="font-normal opacity-75">CU</span>{' '}
+                                <span className="font-normal">CU</span>{' '}
                                 <span className="font-semibold">First Date</span>
                             </div>
                             <div className="text-2xl font-headline leading-none mb-10">
-                                <span className="font-normal">แรกพบนิสิตจุฬา</span> &mdash;{' '}
-                                <span className="font-serif opacity-50">2562</span>
+                                <span className="font-normal">แรกพบนิสิตจุฬา</span>
+                                <span className="font-serif opacity-50"> &mdash; 2562</span>
                             </div>
                             <div
                                 className="flex border-b border-white opacity-50 mb-10"
