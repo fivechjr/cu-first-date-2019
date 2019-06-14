@@ -2,6 +2,8 @@ import React from 'react'
 import App, { Container } from 'next/app'
 import '../resources/tailwind.css'
 
+import NavigationBar from '../components/navigation-bar'
+
 class MyApp extends App {
     static async getInitialProps({ Component, ctx }) {
         let pageProps = {}
@@ -18,6 +20,7 @@ class MyApp extends App {
 
         return (
             <Container>
+                <NavigationBar />
                 <Component {...pageProps} />
             </Container>
         )
