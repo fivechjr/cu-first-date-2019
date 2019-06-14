@@ -8,14 +8,14 @@ const Agenda = ({ start, end, name, className }) => (
         <div className="p-5">
             <div className="w-full flex items-baseline flex-col md:flex-row">
                 <div className="w-full md:w-1/3 lg:w-1/4 flex">
-                    <div className="text-red-600 flex flex-row items-baseline leading-none mb-2 md:mb-0">
+                    <div className="text-red-600 flex flex-row items-baseline leading-none mb-3 md:mb-0">
                         <span className="text-2xl font-headline font-normal">{start}</span>
                         <span className="font-serif opacity-50 mx-2">-</span>
                         <span className="font-serif opacity-50">{end}</span>
                     </div>
                 </div>
                 <div className="w-full md:w-2/3 lg:w-3/4 flex">
-                    <div className="font-headline">{name}</div>
+                    <p className="font-headline text-lg leading-none text-gray-700">{name}</p>
                 </div>
             </div>
         </div>

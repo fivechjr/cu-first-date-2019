@@ -45,7 +45,7 @@ const Hero = () => (
                             />
                             <div>
                                 <Button className="border-white bg-white text-black hover:bg-transparent hover:text-white">
-                                    <span className="font-headline mr-2">
+                                    <span className="font-headline mr-2 text-lg">
                                         ชมรมในคณะวิศวกรรมศาสตร์
                                     </span>
                                     <FiArrowRight />
