@@ -3,6 +3,7 @@ import App, { Container } from 'next/app'
 import '../resources/tailwind.css'
 
 import NavigationBar from '../components/navigation-bar'
+import Footer from '../components/footer'
 
 class MyApp extends App {
     static async getInitialProps({ Component, ctx }) {
@@ -22,6 +23,7 @@ class MyApp extends App {
             <Container>
                 <NavigationBar />
                 <Component {...pageProps} />
+                <Footer />
             </Container>
         )
     }
