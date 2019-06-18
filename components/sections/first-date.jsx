@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import SectionTitle from '../section-title'
 import View from '../view'
 import classNames from 'classnames'
@@ -47,12 +48,14 @@ const FirstDate = () => {
         ))
     }
     return (
-        <section className="bg-gray-100 py-20">
-            <View>
-                <SectionTitle en="FIRST DATE" th="วันแรกพบ" icon={<FiCalendar />} />
-                {renderSchedule()}
-            </View>
-        </section>
+        <Fragment>
+            <section className="bg-gray-100 py-20">
+                <View>
+                    <SectionTitle en="FIRST DATE" th="วันแรกพบ" icon={<FiCalendar />} />
+                    {renderSchedule()}
+                </View>
+            </section>
+        </Fragment>
     )
 }
 
