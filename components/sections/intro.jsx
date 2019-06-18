@@ -5,15 +5,7 @@ import { FiStar } from 'react-icons/fi'
 
 const Intro = () => (
     <Fragment>
-        <style jsx>
-            {`
-                section {
-                    background: linear-gradient(rgba(255, 255, 255, 0.97), #fafafa),
-                        url('/static/floating-cogs.svg') top left repeat;
-                }
-            `}
-        </style>
-        <section className="bg-white py-20 border-t border-gray-200">
+        <section className="bg-white py-20">
             <View>
                 <SectionTitle en="TO THE RED CASTLE" th="สู่ปราสาทแดง" icon={<FiStar />} />
                 <div className="text-gray-700">
