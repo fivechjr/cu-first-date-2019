@@ -7,7 +7,7 @@ const Hero = () => (
     <Fragment>
         <style jsx>{`
             section {
-                background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+                background: radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)),
                     url('/static/cu-hero.jpg') top center no-repeat;
                 background-size: cover;
             }
