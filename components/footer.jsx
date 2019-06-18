@@ -4,8 +4,19 @@ const Footer = () => (
     <footer className="bg-white">
         <View className="py-10">
             <p className="text-center font-sans text-2xs uppercase tracking-widest text-gray-600">
-                <span>&copy; CU First Date {new Date().getFullYear()}</span>
-                <span className="opacity-50"> &middot; Patcharapat Chaijaroen</span>
+                <span className="border-b pb-1 border-white">
+                    &copy; {new Date().getFullYear()} CU First Date
+                </span>
+                <span className="opacity-50 border-b pb-1 border-white">
+                    {' '}
+                    &middot;{' '}
+                    <a
+                        href="https://github.com/fivechjr"
+                        className="border-b pb-1 border-gray-200"
+                        target="_blank">
+                        Patcharapat Chaijaroen
+                    </a>
+                </span>
             </p>
         </View>
     </footer>
