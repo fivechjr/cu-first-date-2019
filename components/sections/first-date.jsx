@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import { FiCalendar } from 'react-icons/fi'
 
 const Agenda = ({ start, end, name, className }) => (
-    <div className={classNames('w-full bg-white rounded-lg shadow-2xl', className)}>
+    <div className={classNames('w-full bg-white shadow-2xl', className)}>
         <div className="p-5">
             <div className="w-full flex items-baseline flex-col md:flex-row">
                 <div className="w-full md:w-1/3 lg:w-1/4 flex">
