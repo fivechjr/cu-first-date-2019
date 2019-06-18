@@ -5,7 +5,11 @@ import ChulaEngineeringIcon from '../chula-engineering-icon'
 import { IoLogoFacebook } from 'react-icons/io'
 import classNames from 'classnames'
 
-const Club = ({ name, type }) => {
+const Club = ({ name, type, backgroundPosition, backgroundSize }) => {
+    let imageFile = name
+    if (imageFile.charAt(imageFile.length - 1) === '.') {
+        imageFile = imageFile.slice(0, -1)
+    }
     const getType = type => {
         switch (type.toUpperCase()) {
             case 'ACADEMIC':
@@ -20,13 +24,15 @@ const Club = ({ name, type }) => {
                 <div className="flex flex-col bg-white shadow-2xl h-full">
                     <div className="pt-6 px-6 md:px-0 md:pt-0">
                         <div
-                            className="w-full bg-gray-300"
+                            className="w-full bg-white border-b border-gray-200"
                             style={{
                                 height: '150px',
-                                backgroundImage: 'url("")',
-                                backgroundSize: 'cover',
+                                backgroundImage: `url("/static/clubs/${imageFile}.jpg")`,
+                                backgroundSize: backgroundSize ? backgroundSize : 'cover',
                                 backgroundRepeat: 'no-repeat',
-                                backgroundPosition: 'center center'
+                                backgroundPosition: backgroundPosition
+                                    ? backgroundPosition
+                                    : 'center center'
                             }}
                         />
                     </div>
@@ -72,15 +78,15 @@ const Clubs = () => (
             <div className="container">
                 <div className="mx-8">
                     <div className="flex flex-wrap justify-center -my-2 -mx-2">
-                        <Club type="Academic" name="Thinc." />
+                        <Club type="Academic" name="Thinc." backgroundSize="contain" />
                         <Club type="Sport" name="วอลเลย์บอล" />
                         <Club type="Sport" name="ยิงปืน" />
                         <Club type="Sport" name="มวย" />
-                        <Club type="Academic" name="โต้วาที" />
+                        <Club type="Academic" name="โต้วาที" backgroundPosition="top center" />
                         <Club type="Sport" name="รักบี้" />
                         <Club type="Academic" name="FE Camp" />
                         <Club type="Sport" name="กีฬาทางน้ำ" />
-                        <Club type="Academic" name="วิชาการ" />
+                        <Club type="Academic" name="วิชาการ" backgroundSize="contain" />
                         <Club type="Academic" name="ค่ายลานเกียร์" />
                         <Club type="Academic" name="ผู้นำเชียร์" />
                         <Club type="Academic" name="IMC" />
