@@ -12,7 +12,7 @@ const Footer = () => (
                     &middot;{' '}
                     <a
                         href="https://github.com/fivechjr"
-                        className="border-b pb-1 border-gray-200"
+                        className="border-b pb-1 text-cu border-cu"
                         target="_blank">
                         Patcharapat Chaijaroen
                     </a>

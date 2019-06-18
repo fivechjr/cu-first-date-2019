@@ -2,6 +2,8 @@ import { Fragment } from 'react'
 import SectionTitle from '../section-title'
 import View from '../view'
 import ChulaEngineeringIcon from '../chula-engineering-icon'
+import { IoLogoFacebook } from 'react-icons/io'
+import classNames from 'classnames'
 
 const Club = ({ name, type }) => {
     const getType = type => {
@@ -16,7 +18,7 @@ const Club = ({ name, type }) => {
         <div className="lg:w-1/4 md:w-1/2 w-full my-2">
             <div className="mx-2">
                 <div className="flex flex-col bg-white shadow-2xl h-full">
-                    <div className="pt-5 px-5 md:px-0 md:pt-0">
+                    <div className="pt-6 px-6 md:px-0 md:pt-0">
                         <div
                             className="w-full bg-gray-300"
                             style={{
@@ -29,11 +31,30 @@ const Club = ({ name, type }) => {
                         />
                     </div>
                     <div className="flex w-full flex-col justify-start py-5">
-                        <div className="mx-6">
-                            <div className="font-sans text-2xs leading-none tracking-widest mb-1 text-gray-600 font-medium">
-                                {type ? getType(type) : 'CLUB'}
+                        <div className="flex justify-between items-center flex-row mx-6">
+                            <div className="flex flex-col">
+                                <div className="font-sans text-2xs leading-none tracking-widest mb-1 text-gray-600 font-medium">
+                                    {type ? getType(type) : 'CLUB'}
+                                </div>
+                                <div className="flex">
+                                    <p
+                                        className={classNames(
+                                            'flex leading-relaxed font-headline text-gray-700 border-b',
+                                            {
+                                                'border-blue-200':
+                                                    type.toUpperCase() === 'ACADEMIC',
+                                                'border-orange-200': type.toUpperCase() === 'SPORT'
+                                            }
+                                        )}>
+                                        {name}
+                                    </p>
+                                </div>
                             </div>
-                            <p className="leading-relaxed font-headline text-gray-700">{name}</p>
+                            <div className="flex">
+                                <div className="text-2xl text-gray-600">
+                                    <IoLogoFacebook />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
