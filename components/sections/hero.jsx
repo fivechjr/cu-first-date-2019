@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import Button from '../button'
 import { FiArrowRight } from 'react-icons/fi'
+import ChulaEngineeringIcon from '../chula-engineering-icon'
 
 const Hero = () => (
     <Fragment>
@@ -24,12 +25,8 @@ const Hero = () => (
                 <div className="mx-8">
                     <div id="hero" className="w-full flex justify-center items-center">
                         <div className="flex flex-col">
-                            <div className="mb-5">
-                                <img
-                                    className="opacity-50"
-                                    src="/static/cu-eng-logo.png"
-                                    alt="Chula Engineering"
-                                />
+                            <div className="text-2xl mb-5">
+                                <ChulaEngineeringIcon />
                             </div>
                             <div className="text-5xl font-headline leading-none mb-5 tracking-wide">
                                 <span className="font-normal">CU</span>{' '}

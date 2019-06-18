@@ -234,6 +234,7 @@ module.exports = {
         },
         fontFamily: {
             headline: ['Playfair Display', 'CHULALONGKORN'],
+            body: ['ChulaCharasNew'],
             sans: [
                 '-apple-system',
                 'BlinkMacSystemFont',

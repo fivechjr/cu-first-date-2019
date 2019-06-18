@@ -16,7 +16,7 @@ const Intro = () => (
                     และความทรงจำแรกพบให้กับน้อง ๆ Freshmen ที่พี่ ๆ เเต่ละคณะจัดขึ้นมา โดยปีนี้งาน
                     CU First Date ของเรามาในธีม
                 </p>
-                <p className="font-headline font-bold italic text-lg text-red-600 leading-loose text-center my-5">
+                <p className="font-headline italic text-lg text-red-600 leading-loose text-center my-5">
                     ‘‘ The Best Gift for You ’’
                 </p>
                 <p className="font-headline text-lg leading-loose">
@@ -24,7 +24,7 @@ const Intro = () => (
                     เพื่อให้น้อง ๆ ได้เก็บเกี่ยวความรู้เเละประสบการณ์ชีวิตในรั้วจุฬาฯ เเละออกไปเป็น
                     ‘’ของขวัญ’’ ที่ดีแก่สังคมภายนอกต่อไป อันจะตรงกับคำกล่าวที่ว่า
                 </p>
-                <p className="font-headline font-bold italic text-lg text-black leading-loose text-center my-5">
+                <p className="font-headline italic text-lg text-black leading-loose text-center my-5">
                     ‘‘ เกียรติภูมิจุฬาฯ คือเกียรติเเห่งการรับใช้ประชาชน ’’
                 </p>
                 <p className="font-headline text-lg leading-loose">
