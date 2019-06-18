@@ -236,6 +236,7 @@ module.exports = {
             headline: ['Playfair Display', 'CHULALONGKORN'],
             body: ['ChulaCharasNew'],
             sans: [
+                'Raleway',
                 '-apple-system',
                 'BlinkMacSystemFont',
                 '"Segoe UI"',
