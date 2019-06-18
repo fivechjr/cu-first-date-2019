@@ -1,4 +1,4 @@
-@import url('/static/fonts/stylesheet.css');
+@import url('/fonts/stylesheet.css');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:600&display=swap');
 
 @tailwind base;
