@@ -19,11 +19,13 @@ const Club = ({ name, type }) => (
                         }}
                     />
                 </div>
-                <div className="flex w-full flex-col justify-start px-6 py-5">
-                    <div className="font-sans text-2xs leading-none tracking-widest mb-1 text-gray-600 font-medium">
-                        {type ? type.toUpperCase() : 'CLUB'}
+                <div className="flex w-full flex-col justify-start py-5">
+                    <div className="mx-6">
+                        <div className="font-sans text-2xs leading-none tracking-widest mb-1 text-gray-600 font-medium">
+                            {type ? type.toUpperCase() : 'CLUB'}
+                        </div>
+                        <p className="leading-relaxed font-headline text-gray-700">{name}</p>
                     </div>
-                    <p className="leading-relaxed font-headline text-gray-700">{name}</p>
                 </div>
             </div>
         </div>
