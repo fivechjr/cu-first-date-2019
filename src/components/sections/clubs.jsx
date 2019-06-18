@@ -9,7 +9,6 @@ import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
 
 const BackgroundSection = ({ className, imageData }) => {
-    console.log(imageData)
     return (
         <BackgroundImage
             Tag="div"

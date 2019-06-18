@@ -5,8 +5,8 @@ import ChulaEngineeringIcon from '../common/chula-engineering-icon'
 import styled from 'styled-components'
 
 const Section = styled.section`
-    background-image: #000000, radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)),
-        url('/cu-hero.jpg');
+    background-color: #000000;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), url('/cu-hero.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
