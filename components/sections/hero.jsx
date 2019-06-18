@@ -7,8 +7,17 @@ const Hero = () => (
     <Fragment>
         <style jsx>{`
             section {
-                background: radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)),
-                    url('/static/cu-hero.jpg') top center no-repeat;
+                background-image: radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)),
+                    url('/static/cu-hero.jpg');
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            section.fallback {
+                background-image: radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)),
+                    url('/static/cu-hero.webp');
+                background-position: top center;
+                background-repeat: no-repeat;
                 background-size: cover;
             }
             img {
@@ -20,7 +29,7 @@ const Hero = () => (
                 height: 100vh;
             }
         `}</style>
-        <section className="text-white">
+        <section className="fallback text-white">
             <div className="container">
                 <div className="mx-8">
                     <div id="hero" className="w-full flex justify-center items-center">
