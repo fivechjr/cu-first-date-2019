@@ -83,7 +83,7 @@ const Clubs = () => (
                         <Club type="Sport" name="ยิงปืน" />
                         <Club type="Sport" name="มวย" />
                         <Club type="Academic" name="โต้วาที" backgroundPosition="top center" />
-                        <Club type="Sport" name="รักบี้" />
+                        <Club type="Sport" name="รักบี้" backgroundPosition="top center" />
                         <Club type="Academic" name="FE Camp" />
                         <Club type="Sport" name="กีฬาทางน้ำ" />
                         <Club type="Academic" name="วิชาการ" backgroundSize="contain" />
