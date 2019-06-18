@@ -39,7 +39,7 @@ const Club = ({ name, type }) => {
                                 <div className="flex">
                                     <p
                                         className={classNames(
-                                            'flex leading-relaxed font-headline text-gray-700 border-b',
+                                            'leading-relaxed font-headline text-gray-700 border-b',
                                             {
                                                 'border-blue-200':
                                                     type.toUpperCase() === 'ACADEMIC',
@@ -83,7 +83,7 @@ const Clubs = () => (
                         <Club type="Academic" name="วิชาการ" />
                         <Club type="Academic" name="ค่ายลานเกียร์" />
                         <Club type="Academic" name="ผู้นำเชียร์" />
-                        <Club type="Academic" name="IMC (Intania Music Club)" />
+                        <Club type="Academic" name="IMC" />
                     </div>
                 </div>
             </div>
