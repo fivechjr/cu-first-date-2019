@@ -13,7 +13,9 @@ class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <Head />
+                <Head>
+                    <link rel="shortcut icon" type="image/png" href="/static/favicon@1x.png" />
+                </Head>
                 <body className="antialiased font-sans">
                     <Main />
                     <NextScript />
