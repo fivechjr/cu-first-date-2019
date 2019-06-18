@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Hero from '../components/sections/hero'
 import FirstDate from '../components/sections/first-date'
 import Intro from '../components/sections/intro'
+import Clubs from '../components/sections/clubs'
 
 function Home() {
     return (
@@ -13,6 +14,7 @@ function Home() {
             <Hero />
             <FirstDate />
             <Intro />
+            <Clubs />
         </Fragment>
     )
 }

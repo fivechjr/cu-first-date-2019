@@ -15,7 +15,7 @@ const Agenda = ({ start, end, name, className }) => (
                     </div>
                 </div>
                 <div className="w-full md:w-2/3 lg:w-3/4 flex">
-                    <p className="font-headline text-lg leading-none text-gray-700">{name}</p>
+                    <p className="font-headline text-lg leading-relaxed text-gray-700">{name}</p>
                 </div>
             </div>
         </div>
@@ -32,7 +32,8 @@ const FirstDate = () => {
         {
             start: '10.00',
             end: '11.00',
-            name: 'วีดีทัศน์ 100 ปี จุฬาลงกรณ์มหาวิทยาลัย'
+            name:
+                'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius assumenda cupiditate quas dolores minus! Incidunt error, eius quo voluptas illo delectus modi libero tempore laboriosam, vero dolorum hic iste! Doloribus!'
         }
     ]
     const renderSchedule = () => {
