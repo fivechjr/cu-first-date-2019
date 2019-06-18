@@ -1,0 +1,25 @@
+{
+    "name": "cu-first-date-2019",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "dependencies": {
+        "@zeit/next-css": "^1.0.1",
+        "autoprefixer": "^9.6.0",
+        "classnames": "^2.2.6",
+        "cssnano": "^4.1.10",
+        "next": "^8.1.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-icons": "^3.7.0",
+        "tailwindcss": "^1.0.4"
+    },
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^1.2.0"
+    }
+}
