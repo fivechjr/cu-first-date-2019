@@ -24,7 +24,7 @@ module.exports = {
                 background_color: `#663399`,
                 theme_color: `#663399`,
                 display: `minimal-ui`,
-                icon: `static/favicon@2x.png` // This path is relative to the root of the site.
+                icon: `./static/favicon@2x.png` // This path is relative to the root of the site.
             }
         },
         `gatsby-plugin-postcss`,
@@ -37,6 +37,24 @@ module.exports = {
                 // whitelist: ['whitelist'], // Don't remove this selector
                 // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
                 // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+            }
+        },
+        {
+            resolve: `gatsby-plugin-favicon`,
+            options: {
+                logo: './static/favicon@2x.png',
+                injectHTML: true,
+                icons: {
+                    android: true,
+                    appleIcon: true,
+                    appleStartup: true,
+                    coast: true,
+                    favicons: true,
+                    firefox: true,
+                    twitter: true,
+                    yandex: true,
+                    windows: true
+                }
             }
         }
         // this (optional) plugin enables Progressive Web App + Offline functionality
