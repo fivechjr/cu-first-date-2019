@@ -5,7 +5,8 @@ import ChulaEngineeringIcon from '../common/chula-engineering-icon'
 import styled from 'styled-components'
 
 const Section = styled.section`
-    background-image: radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), url('/cu-hero.jpg');
+    background-image: #000000, radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)),
+        url('/cu-hero.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +23,7 @@ const Hero = () => (
             <div className="container">
                 <div className="mx-8">
                     <HeroSection id="hero" className="w-full flex justify-center items-center">
-                        <div className="flex flex-col">
+                        <div className="flex flex-col my-20">
                             <div className="text-2xl mb-5">
                                 <ChulaEngineeringIcon />
                             </div>
