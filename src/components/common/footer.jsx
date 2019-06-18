@@ -14,7 +14,8 @@ const Footer = () => (
                     <a
                         href="https://github.com/fivechjr"
                         className="border-b pb-1 text-cu border-cu"
-                        target="_blank">
+                        target="_blank"
+                        rel="noreferrer">
                         Patcharapat Chaijaroen
                     </a>
                 </span>
