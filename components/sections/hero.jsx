@@ -6,14 +6,14 @@ import ChulaEngineeringIcon from '../chula-engineering-icon'
 const Hero = () => (
     <Fragment>
         <style jsx>{`
-            section {
+            section.webp {
                 background-image: radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)),
                     url('/static/cu-hero.jpg');
                 background-position: top center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-            section.fallback {
+            section.no-webp {
                 background-image: radial-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)),
                     url('/static/cu-hero.webp');
                 background-position: top center;
@@ -29,7 +29,7 @@ const Hero = () => (
                 height: 100vh;
             }
         `}</style>
-        <section className="fallback text-white">
+        <section className="webp no-webp text-white">
             <div className="container">
                 <div className="mx-8">
                     <div id="hero" className="w-full flex justify-center items-center">
