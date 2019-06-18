@@ -4,25 +4,27 @@ import View from '../view'
 import ChulaEngineeringIcon from '../chula-engineering-icon'
 
 const Club = ({ name, type }) => (
-    <div className="lg:w-1/4 md:w-1/2 w-full px-2 my-2">
-        <div className="flex flex-col bg-white shadow-2xl h-full">
-            <div className="pt-5 px-5 md:px-0 md:pt-0">
-                <div
-                    className="w-full bg-gray-300"
-                    style={{
-                        height: '150px',
-                        backgroundImage: 'url("")',
-                        backgroundSize: 'cover',
-                        backgroundRepeat: 'no-repeat',
-                        backgroundPosition: 'center center'
-                    }}
-                />
-            </div>
-            <div className="flex w-full flex-col justify-start px-6 py-5">
-                <div className="font-sans text-2xs leading-none tracking-widest mb-1 text-gray-600 font-medium">
-                    {type ? type.toUpperCase() : 'CLUB'}
+    <div className="lg:w-1/4 md:w-1/2 w-full my-2">
+        <div className="mx-2">
+            <div className="flex flex-col bg-white shadow-2xl h-full">
+                <div className="pt-5 px-5 md:px-0 md:pt-0">
+                    <div
+                        className="w-full bg-gray-300"
+                        style={{
+                            height: '150px',
+                            backgroundImage: 'url("")',
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'center center'
+                        }}
+                    />
                 </div>
-                <p className="leading-relaxed font-headline text-gray-700">{name}</p>
+                <div className="flex w-full flex-col justify-start px-6 py-5">
+                    <div className="font-sans text-2xs leading-none tracking-widest mb-1 text-gray-600 font-medium">
+                        {type ? type.toUpperCase() : 'CLUB'}
+                    </div>
+                    <p className="leading-relaxed font-headline text-gray-700">{name}</p>
+                </div>
             </div>
         </div>
     </div>
