@@ -10,7 +10,7 @@ const NavigationBar = ({ pageTitle }) => (
                 <div className="flex items-center">
                     <Link to="/#clubs">
                         <div className="font-sans flex items-center py-3 mr-2">
-                            <span className="text-black leading-none font-headline text-sm">
+                            <span className="text-gray-700 leading-none font-headline text-base">
                                 <span>CU Engineering</span>
                                 <span className="font-bold"> Clubs '19</span>
                             </span>
@@ -20,7 +20,7 @@ const NavigationBar = ({ pageTitle }) => (
                         <span className="text-2xs text-gray-400">
                             <FaCaretRight />
                         </span>
-                        <span className="text-red-600 ml-2 leading-none font-headline text-sm">
+                        <span className="text-red-600 ml-2 leading-none font-headline text-base">
                             {pageTitle}
                         </span>
                     </div>
