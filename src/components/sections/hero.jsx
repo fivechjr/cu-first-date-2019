@@ -41,12 +41,14 @@ const Hero = () => (
                             />
                             <div>
                                 <a href="#clubs">
-                                    <Button className="border-white bg-white text-black hover:bg-transparent hover:text-white">
-                                        <span className="font-headline mr-2 text-lg">
-                                            ชมรมในคณะวิศวกรรมศาสตร์
-                                        </span>
-                                        <FiArrowRight />
-                                    </Button>
+                                    <div>
+                                        <Button className="border-white bg-white text-black hover:bg-transparent hover:text-white">
+                                            <span className="font-headline mr-2 text-lg">
+                                                ชมรมในคณะวิศวกรรมศาสตร์
+                                            </span>
+                                            <FiArrowRight />
+                                        </Button>
+                                    </div>
                                 </a>
                             </div>
                         </div>
