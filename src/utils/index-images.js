@@ -10,7 +10,7 @@ for (const _c of clubs) {
     let c = _.clone(_c, true)
     const directoryPath = path.resolve(`static/clubs/per-club-view/${c.slug}`)
     fs.readdir(directoryPath, function(err, files) {
-        let _f = _.pull(files, 'images.json')
+        let _f = _.pull(files, 'images.json', '.DS_Store')
         c.images = []
         if (_f && _f.length > 0) {
             let _files = _f.map(f => {

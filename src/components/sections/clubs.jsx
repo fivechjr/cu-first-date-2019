@@ -30,7 +30,7 @@ const StyledBackgroundSection = styled(BackgroundSection).attrs({
     background-size: ${props => (props.backgroundSize ? props.backgroundSize : 'cover')};
 `
 
-const Club = ({ name, type, backgroundPosition, backgroundSize, imageData }) => {
+const Club = ({ name, type, backgroundPosition, backgroundSize, imageData, slug }) => {
     const getType = type => {
         switch (type.toUpperCase()) {
             default:
@@ -59,7 +59,7 @@ const Club = ({ name, type, backgroundPosition, backgroundSize, imageData }) => 
                                     {getType(type)}
                                 </div>
                                 <div className="flex">
-                                    <Link to={`/clubs/` + (name === 'Thinc.' ? 'thinc' : name)}>
+                                    <Link to={`/clubs/` + (slug ? slug : name.toLowerCase())}>
                                         <p
                                             className={classNames(
                                                 'leading-relaxed font-headline text-gray-700 border-b',
@@ -148,6 +148,10 @@ const Clubs = () => {
                     ACADEMIC: file(relativePath: { eq: "clubs/วิชาการ.jpg" }) {
                         ...imageFragment
                     }
+
+                    FORMULA: file(relativePath: { eq: "clubs/Formula.jpg" }) {
+                        ...imageFragment
+                    }
                 }
             `}
             render={data => {
@@ -169,6 +173,7 @@ const Clubs = () => {
                                             name="Thinc."
                                             backgroundSize="contain"
                                             imageData={data.THINC}
+                                            slug="thinc"
                                         />
                                         <Club
                                             type="Sport"
@@ -197,6 +202,7 @@ const Clubs = () => {
                                             type="Academic"
                                             name="FE Camp"
                                             imageData={data.FE_CAMP}
+                                            slug="fe-camp"
                                         />
                                         <Club
                                             type="Sport"
@@ -220,6 +226,12 @@ const Clubs = () => {
                                             imageData={data.CHEER}
                                         />
                                         <Club type="Academic" name="IMC" imageData={data.IMC} />
+                                        <Club
+                                            type="Sport"
+                                            name="CU Formula Student"
+                                            imageData={data.FORMULA}
+                                            slug="cu-formula-student"
+                                        />
                                     </div>
                                 </div>
                             </div>

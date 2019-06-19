@@ -1,19 +1,27 @@
 import React from 'react'
+import Linkify from 'react-linkify'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import NavigationBar from '../components/common/navigation-bar'
 import View from '../components/common/view'
 import ImageView from '../components/common/image-view'
 import SectionTitle from '../components/common/section-title'
-import Separator from '../components/common/separator'
+import classNames from 'classnames'
 import ChulaEngineeringIcon from '../components/common/chula-engineering-icon'
 // import GatsbyImage from '../components/common/gatsby-image'
 
 const PerClubView = ({ pageContext }) => {
     const renderImages = () => {
         if (pageContext.images && pageContext.images.length > 0) {
-            return pageContext.images.map(i => (
-                <img className="w-full" src={i} alt={pageContext.name} />
+            return pageContext.images.map((value, index) => (
+                <img
+                    key={index}
+                    className={classNames('w-full', {
+                        'mb-10': index !== pageContext.images.length - 1
+                    })}
+                    src={value}
+                    alt={pageContext.name}
+                />
             ))
         }
     }
@@ -28,6 +36,12 @@ const PerClubView = ({ pageContext }) => {
                 return 'gray'
         }
     }
+
+    const componentDecorator = (href, text, key) => (
+        <a className="text-cu" href={href} key={key} target="_blank" rel="noopener noreferrer">
+            {text}
+        </a>
+    )
 
     const mainColor = getColor()
 
@@ -44,7 +58,9 @@ const PerClubView = ({ pageContext }) => {
                         color={mainColor}
                     />
                     <p className="font-headline text-lg leading-loose text-gray-700">
-                        {pageContext.description}
+                        <Linkify componentDecorator={componentDecorator}>
+                            {pageContext.description}
+                        </Linkify>
                     </p>
                 </View>
             </section>

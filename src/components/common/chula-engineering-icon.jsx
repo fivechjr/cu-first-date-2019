@@ -2,7 +2,7 @@ import React from 'react'
 
 const ChulaEngineeringIcon = () => (
     <svg width="1.25em" height="1.25em" viewBox="0 0 244 141" version="1.1">
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
             <g id="chula-engineering-all-white" fill="#FFFFFF">
                 <g id="Group">
                     <g id="Path">
