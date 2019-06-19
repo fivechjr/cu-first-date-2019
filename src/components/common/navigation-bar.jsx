@@ -1,23 +1,29 @@
 import React from 'react'
 import View from './view'
-import { FiChevronLeft } from 'react-icons/fi'
+import { FaCaretRight } from 'react-icons/fa'
 import { Link } from 'gatsby'
 
-const NavigationBar = () => (
-    <header className="sticky top-0 py-2 bg-red-600 z-20 shadow-2xl">
+const NavigationBar = ({ pageTitle }) => (
+    <header className="sticky top-0 py-4 bg-white z-20 bg-gray-100">
         <View>
-            <div className="w-full flex flex-row justify-center">
+            <div className="w-full flex flex-row justify-start">
                 <div className="flex items-center">
                     <Link to="/#clubs">
-                        <div className="flex items-center py-3">
-                            <span className="text-base text-white">
-                                <FiChevronLeft />
-                            </span>
-                            <span className="text-white ml-2 leading-none font-sans text-2xs uppercase tracking-widest">
-                                GO BACK
+                        <div className="flex items-center py-3 mr-2">
+                            <span className="text-black leading-none font-headline text-sm">
+                                <span>CU Engineering</span>
+                                <span className="font-bold"> Clubs '19</span>
                             </span>
                         </div>
                     </Link>
+                    <div className="flex items-center py-3">
+                        <span className="text-2xs text-gray-400">
+                            <FaCaretRight />
+                        </span>
+                        <span className="text-red-600 ml-2 leading-none font-headline text-sm">
+                            {pageTitle}
+                        </span>
+                    </div>
                 </div>
             </div>
         </View>
