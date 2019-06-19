@@ -64,7 +64,7 @@ const PerClubView = ({ pageContext }) => {
                     </p>
                 </View>
             </section>
-            <section className="bg-gray-100 py-20">
+            <section>
                 <ImageView>{renderImages()}</ImageView>
             </section>
         </Layout>

@@ -5,7 +5,7 @@ const SectionTitle = ({ en, th, icon, color }) => {
         <Fragment>
             <div className="flex flex-row">
                 <div
-                    className={`icon flex justify-center items-center text-white bg-red-600 bg-white shadow-xl rounded-full mr-5`}
+                    className={`flex justify-center items-center flex-shrink-0 text-white bg-red-600 bg-white shadow-xl rounded-full mr-5`}
                     style={{ width: '40px', height: '40px' }}>
                     {icon}
                 </div>
