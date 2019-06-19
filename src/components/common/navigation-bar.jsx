@@ -1,7 +1,7 @@
 import React from 'react'
 import View from './view'
 import { FiChevronLeft } from 'react-icons/fi'
-import Link from 'gatsby'
+import { Link } from 'gatsby'
 
 const NavigationBar = () => (
     <header className="sticky top-0 py-2 bg-red-600 z-20 shadow-2xl">
