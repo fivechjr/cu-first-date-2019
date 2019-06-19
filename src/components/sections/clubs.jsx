@@ -46,11 +46,13 @@ const Club = ({ name, type, backgroundPosition, backgroundSize, imageData, slug 
             <div className="mx-2">
                 <div className="flex flex-col bg-white shadow-2xl h-full">
                     <div className="pt-6 px-6 md:px-0 md:pt-0">
-                        <StyledBackgroundSection
-                            imageData={imageData.childImageSharp.fluid}
-                            backgroundPosition={backgroundPosition}
-                            backgroundSize={backgroundSize}
-                        />
+                        <Link to={`/clubs/` + (slug ? slug : name.toLowerCase())}>
+                            <StyledBackgroundSection
+                                imageData={imageData.childImageSharp.fluid}
+                                backgroundPosition={backgroundPosition}
+                                backgroundSize={backgroundSize}
+                            />
+                        </Link>
                     </div>
                     <div className="flex w-full flex-col justify-start py-5">
                         <div className="flex justify-between items-center flex-row mx-6">
