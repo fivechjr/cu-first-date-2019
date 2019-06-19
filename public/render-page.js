@@ -15811,7 +15811,7 @@ var NavigationBar = function NavigationBar() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "w-1/2 flex items-center"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    href: "/#fd-clubs/"
+    to: "/#fd-clubs/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex items-center py-3"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
