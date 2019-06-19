@@ -3,12 +3,6 @@ import React, { Fragment } from 'react'
 const SectionTitle = ({ en, th, icon, color }) => {
     return (
         <Fragment>
-            <style jsx>{`
-                .icon {
-                    width: 40px;
-                    height: 40px;
-                }
-            `}</style>
             <div className="flex flex-row">
                 <div
                     className={`icon flex justify-center items-center text-white bg-red-600 bg-white shadow-xl rounded-full mr-5`}
