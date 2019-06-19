@@ -23,9 +23,6 @@ const NavigationBar = ({ pageTitle, description }) => (
                             <span className="text-red-600 leading-none font-headline text-base">
                                 {pageTitle}
                             </span>
-                            {/* <p className="font-sans text-2xs leading-none tracking-widest text-gray-600 font-medium">
-                                {description.toUpperCase()}
-                            </p> */}
                         </div>
                     </div>
                 </div>

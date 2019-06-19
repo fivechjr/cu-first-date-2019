@@ -5,7 +5,7 @@ const View = ({ children, className, variant }) => {
         return (
             <div className="container">
                 <div className="mx-8 flex justify-center">
-                    <div className="w-full md:w-6/7 xl:w-2/3">
+                    <div className="w-full">
                         <div className={className}>{children}</div>
                     </div>
                 </div>

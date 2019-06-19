@@ -48,7 +48,7 @@ const PerClubView = ({ pageContext }) => {
     return (
         <Layout>
             <SEO title={pageContext.name} />
-            <NavigationBar pageTitle={pageContext.name} description={pageContext.type} />
+            {/* <NavigationBar pageTitle={pageContext.name} description={pageContext.type} /> */}
             <section className="bg-white">
                 <View className="pt-20 pb-10">
                     <SectionTitle
