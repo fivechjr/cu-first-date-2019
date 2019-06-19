@@ -152,6 +152,10 @@ const Clubs = () => {
                     FORMULA: file(relativePath: { eq: "clubs/Formula.jpg" }) {
                         ...imageFragment
                     }
+
+                    TABLE_TENNIS: file(relativePath: { eq: "clubs/ปิงปอง.jpeg" }) {
+                        ...imageFragment
+                    }
                 }
             `}
             render={data => {
@@ -231,6 +235,11 @@ const Clubs = () => {
                                             name="CU Formula Student"
                                             imageData={data.FORMULA}
                                             slug="cu-formula-student"
+                                        />
+                                        <Club
+                                            type="Sport"
+                                            name="ปิงปอง"
+                                            imageData={data.TABLE_TENNIS}
                                         />
                                     </div>
                                 </div>
