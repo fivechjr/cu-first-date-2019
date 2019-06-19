@@ -16,7 +16,7 @@ const PerClubView = ({ pageContext }) => {
             return pageContext.images.map((value, index) => (
                 <img
                     key={index}
-                    className={classNames('w-full', {
+                    className={classNames('w-full shadow-2xl', {
                         'mb-10': index !== pageContext.images.length - 1
                     })}
                     src={value}
@@ -48,7 +48,7 @@ const PerClubView = ({ pageContext }) => {
     return (
         <Layout>
             <SEO title={pageContext.name} />
-            <NavigationBar pageTitle={pageContext.name} />
+            <NavigationBar pageTitle={pageContext.name} description={pageContext.type} />
             <section className="bg-white">
                 <View className="pt-20 pb-10">
                     <SectionTitle
