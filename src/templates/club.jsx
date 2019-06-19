@@ -50,7 +50,7 @@ const PerClubView = ({ pageContext }) => {
             <SEO title={pageContext.name} />
             <NavigationBar pageTitle={pageContext.name} />
             <section className="bg-white">
-                <View className="py-20">
+                <View className="pt-20 pb-10">
                     <SectionTitle
                         en={pageContext.type.toUpperCase()}
                         th={pageContext.name}
