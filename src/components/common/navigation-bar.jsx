@@ -8,7 +8,7 @@ const NavigationBar = () => (
         <View>
             <div className="w-full flex flex-row justify-between">
                 <div className="w-1/2 flex items-center">
-                    <Link to="/#fd-clubs/">
+                    <Link to="/#fd-clubs">
                         <div className="flex items-center py-3">
                             <span className="text-base text-white">
                                 <FiChevronLeft />

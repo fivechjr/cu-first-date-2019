@@ -23,7 +23,7 @@ const PerClubView = ({ pageContext }) => {
 
     return (
         <Layout>
-            <SEO title="Home" />
+            <SEO title={pageContext.name} />
             <NavigationBar />
             <section className="bg-white">
                 <View className="py-20 border-b border-gray-200">
