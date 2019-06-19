@@ -1,7 +1,7 @@
 import React from 'react'
 
 const View = ({ children, className, variant }) => {
-    if (variant.toLowerCase() === 'wide') {
+    if (variant && variant.toLowerCase() === 'wide') {
         return (
             <div className="container">
                 <div className="mx-8 flex justify-center">
