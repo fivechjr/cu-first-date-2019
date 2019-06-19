@@ -3,18 +3,21 @@
         "slug": "thinc",
         "name": "Thinc.",
         "description": "Thinc. is a student-run community aiming to make impact to society. A student community committed to promoting real-world profession skills with the goal of incubating the leader of tomorrow.",
-        "type": "Academic"
+        "type": "Academic",
+        "images": []
     },
     {
         "slug": "วอลเลย์บอล",
         "name": "วอลเลย์บอล",
         "description": "First meet วันจันทร์ที่ 24 ม.ย. 13.00 น. ที่ชั้น 12 ตึก 100 ปี คณะวิศวกรรมศาสตร์ นะครับ สำหรับใครที่เล่นไม่เป็นกลัวว่าจะเล่นไม่ได้บอกเลยว่าเราจะมีพี่สอนให้ เล่นกันสนุก ๆ ไม่คิดไรมาก พี่ ๆ ใจดี มาเล่นด้วยกันเยอะ ๆ นะ ใครสนใจหรือมีข้อสอบถามก็ลองเข้ากลุ่มไลน์มาคุยกันก่อนได้นะ",
-        "type": "Sport"
+        "type": "Sport",
+        "images": ["/clubs/per-club-view/วอลเลย์บอล/1.jpg"]
     },
     {
         "slug": "ยิงปืน",
         "name": "ยิงปืน",
         "description": "ชมรมยิงปืนที่ให้มากกว่าการยิงปืน",
-        "type": "Sport"
+        "type": "Sport",
+        "images": ["/clubs/per-club-view/ยิงปืน/1.jpeg"]
     }
 ]
