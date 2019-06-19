@@ -19,7 +19,9 @@ const NavigationBar = ({ pageTitle, description }) => (
                         </div>
                     </Link>
                     <div className="flex items-center py-3">
-                        <span className="text-3xl leading-none font-headline text-gray-300">/</span>
+                        <span className="text-base text-gray-400">
+                            <FaCaretRight />
+                        </span>
                         <div className="flex flex-col ml-5">
                             <span className="text-red-600 leading-none font-headline text-base mb-2">
                                 {pageTitle}
