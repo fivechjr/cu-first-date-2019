@@ -31,12 +31,10 @@ const StyledBackgroundSection = styled(BackgroundSection).attrs({
 `
 
 const Club = ({ name, type, backgroundPosition, backgroundSize, imageData }) => {
-    let imageFile = name
-    if (imageFile.charAt(imageFile.length - 1) === '.') {
-        imageFile = imageFile.slice(0, -1)
-    }
     const getType = type => {
         switch (type.toUpperCase()) {
+            default:
+                return <span className="text-gray-600">CLUB</span>
             case 'ACADEMIC':
                 return <span className="text-blue-600">{type.toUpperCase()}</span>
             case 'SPORT':
@@ -48,18 +46,6 @@ const Club = ({ name, type, backgroundPosition, backgroundSize, imageData }) => 
             <div className="mx-2">
                 <div className="flex flex-col bg-white shadow-2xl h-full">
                     <div className="pt-6 px-6 md:px-0 md:pt-0">
-                        {/* <div
-                            className="w-full bg-white border-b border-gray-200"
-                            style={{
-                                height: '150px',
-                                backgroundImage: `url("/clubs/${imageFile}.jpg")`,
-                                backgroundSize: backgroundSize ? backgroundSize : 'cover',
-                                backgroundRepeat: 'no-repeat',
-                                backgroundPosition: backgroundPosition
-                                    ? backgroundPosition
-                                    : 'center center'
-                            }}
-                        /> */}
                         <StyledBackgroundSection
                             imageData={imageData.childImageSharp.fluid}
                             backgroundPosition={backgroundPosition}
@@ -70,7 +56,7 @@ const Club = ({ name, type, backgroundPosition, backgroundSize, imageData }) => 
                         <div className="flex justify-between items-center flex-row mx-6">
                             <div className="flex flex-col">
                                 <div className="font-sans text-2xs leading-none tracking-widest mb-1 text-gray-600 font-medium">
-                                    {type ? getType(type) : 'CLUB'}
+                                    {getType(type)}
                                 </div>
                                 <div className="flex">
                                     <p
@@ -116,47 +102,47 @@ const Clubs = () => {
                         ...imageFragment
                     }
 
-                    FE_Camp: file(relativePath: { eq: "clubs/FE Camp.jpg" }) {
+                    FE_CAMP: file(relativePath: { eq: "clubs/FE Camp.jpg" }) {
                         ...imageFragment
                     }
 
-                    Thinc: file(relativePath: { eq: "clubs/Thinc.jpg" }) {
+                    THINC: file(relativePath: { eq: "clubs/Thinc.jpg" }) {
                         ...imageFragment
                     }
 
-                    Swimming: file(relativePath: { eq: "clubs/กีฬาทางน้ำ.jpg" }) {
+                    SWIMMING: file(relativePath: { eq: "clubs/กีฬาทางน้ำ.jpg" }) {
                         ...imageFragment
                     }
 
-                    Larngear: file(relativePath: { eq: "clubs/ค่ายลานเกียร์.jpg" }) {
+                    LARNGEAR: file(relativePath: { eq: "clubs/ค่ายลานเกียร์.jpg" }) {
                         ...imageFragment
                     }
 
-                    Public_Speaking: file(relativePath: { eq: "clubs/โต้วาที.jpg" }) {
+                    PUBLIC_SPEAKING: file(relativePath: { eq: "clubs/โต้วาที.jpg" }) {
                         ...imageFragment
                     }
 
-                    Cheer: file(relativePath: { eq: "clubs/ผู้นำเชียร์.jpg" }) {
+                    CHEER: file(relativePath: { eq: "clubs/ผู้นำเชียร์.jpg" }) {
                         ...imageFragment
                     }
 
-                    Boxing: file(relativePath: { eq: "clubs/มวย.jpg" }) {
+                    BOXING: file(relativePath: { eq: "clubs/มวย.jpg" }) {
                         ...imageFragment
                     }
 
-                    Shooting: file(relativePath: { eq: "clubs/ยิงปืน.jpg" }) {
+                    SHOOTING: file(relativePath: { eq: "clubs/ยิงปืน.jpg" }) {
                         ...imageFragment
                     }
 
-                    Rugby: file(relativePath: { eq: "clubs/รักบี้.jpg" }) {
+                    RUGBY: file(relativePath: { eq: "clubs/รักบี้.jpg" }) {
                         ...imageFragment
                     }
 
-                    Volleyball: file(relativePath: { eq: "clubs/วอลเลย์บอล.jpg" }) {
+                    VOLLEYBALL: file(relativePath: { eq: "clubs/วอลเลย์บอล.jpg" }) {
                         ...imageFragment
                     }
 
-                    Academic: file(relativePath: { eq: "clubs/วิชาการ.jpg" }) {
+                    ACADEMIC: file(relativePath: { eq: "clubs/วิชาการ.jpg" }) {
                         ...imageFragment
                     }
                 }
@@ -179,56 +165,56 @@ const Clubs = () => {
                                             type="Academic"
                                             name="Thinc."
                                             backgroundSize="contain"
-                                            imageData={data.Thinc}
+                                            imageData={data.THINC}
                                         />
                                         <Club
                                             type="Sport"
                                             name="วอลเลย์บอล"
-                                            imageData={data.Volleyball}
+                                            imageData={data.VOLLEYBALL}
                                         />
                                         <Club
                                             type="Sport"
                                             name="ยิงปืน"
-                                            imageData={data.Shooting}
+                                            imageData={data.SHOOTING}
                                         />
-                                        <Club type="Sport" name="มวย" imageData={data.Boxing} />
+                                        <Club type="Sport" name="มวย" imageData={data.BOXING} />
                                         <Club
                                             type="Academic"
                                             name="โต้วาที"
                                             backgroundPosition="top center"
-                                            imageData={data.Public_Speaking}
+                                            imageData={data.PUBLIC_SPEAKING}
                                         />
                                         <Club
                                             type="Sport"
                                             name="รักบี้"
                                             backgroundPosition="top center"
-                                            imageData={data.Rugby}
+                                            imageData={data.RUGBY}
                                         />
                                         <Club
                                             type="Academic"
                                             name="FE Camp"
-                                            imageData={data.FE_Camp}
+                                            imageData={data.FE_CAMP}
                                         />
                                         <Club
                                             type="Sport"
                                             name="กีฬาทางน้ำ"
-                                            imageData={data.Swimming}
+                                            imageData={data.SWIMMING}
                                         />
                                         <Club
                                             type="Academic"
                                             name="วิชาการ"
                                             backgroundSize="contain"
-                                            imageData={data.Academic}
+                                            imageData={data.ACADEMIC}
                                         />
                                         <Club
                                             type="Academic"
                                             name="ค่ายลานเกียร์"
-                                            imageData={data.Larngear}
+                                            imageData={data.LARNGEAR}
                                         />
                                         <Club
                                             type="Academic"
                                             name="ผู้นำเชียร์"
-                                            imageData={data.Cheer}
+                                            imageData={data.CHEER}
                                         />
                                         <Club type="Academic" name="IMC" imageData={data.IMC} />
                                     </div>
