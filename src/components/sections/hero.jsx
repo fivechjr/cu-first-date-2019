@@ -40,12 +40,14 @@ const Hero = () => (
                                 style={{ width: '50px' }}
                             />
                             <div>
-                                <Button className="border-white bg-white text-black hover:bg-transparent hover:text-white">
-                                    <span className="font-headline mr-2 text-lg">
-                                        ชมรมในคณะวิศวกรรมศาสตร์
-                                    </span>
-                                    <FiArrowRight />
-                                </Button>
+                                <a href="#clubs">
+                                    <Button className="border-white bg-white text-black hover:bg-transparent hover:text-white">
+                                        <span className="font-headline mr-2 text-lg">
+                                            ชมรมในคณะวิศวกรรมศาสตร์
+                                        </span>
+                                        <FiArrowRight />
+                                    </Button>
+                                </a>
                             </div>
                         </div>
                     </HeroSection>
