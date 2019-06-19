@@ -153,7 +153,7 @@ const Clubs = () => {
             render={data => {
                 return (
                     <Fragment>
-                        <section id="fd-clubs" className="bg-gray-100 py-20">
+                        <section id="clubs" className="bg-gray-100 py-20">
                             <View>
                                 <SectionTitle
                                     en="CLUBS"
