@@ -39,16 +39,14 @@ const Hero = () => (
                                 className="flex border-b border-white opacity-50 mb-10"
                                 style={{ width: '50px' }}
                             />
-                            <div>
+                            <div className="flex">
                                 <a href="#clubs">
-                                    <div>
-                                        <Button className="border-white bg-white text-black hover:bg-transparent hover:text-white">
-                                            <span className="font-headline mr-2 text-lg">
-                                                ชมรมในคณะวิศวกรรมศาสตร์
-                                            </span>
-                                            <FiArrowRight />
-                                        </Button>
-                                    </div>
+                                    <Button className="border-white bg-white text-black hover:bg-transparent hover:text-white">
+                                        <span className="font-headline mr-2 text-lg">
+                                            ชมรมในคณะวิศวกรรมศาสตร์
+                                        </span>
+                                        <FiArrowRight />
+                                    </Button>
                                 </a>
                             </div>
                         </div>

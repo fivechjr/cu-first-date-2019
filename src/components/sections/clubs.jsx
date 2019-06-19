@@ -75,11 +75,11 @@ const Club = ({ name, type, backgroundPosition, backgroundSize, imageData }) => 
                                     </Link>
                                 </div>
                             </div>
-                            <div className="flex">
+                            {/* <div className="flex">
                                 <div className="text-2xl text-gray-600">
                                     <IoLogoFacebook />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

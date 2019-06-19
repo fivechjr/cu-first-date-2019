@@ -6,8 +6,8 @@ import { Link } from 'gatsby'
 const NavigationBar = () => (
     <header className="sticky top-0 py-2 bg-red-600 z-20 shadow-2xl">
         <View>
-            <div className="w-full flex flex-row justify-between">
-                <div className="w-1/2 flex items-center">
+            <div className="w-full flex flex-row justify-center">
+                <div className="flex items-center">
                     <Link to="/#clubs">
                         <div className="flex items-center py-3">
                             <span className="text-base text-white">
