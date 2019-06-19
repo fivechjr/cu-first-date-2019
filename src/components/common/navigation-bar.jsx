@@ -1,11 +1,11 @@
 import React from 'react'
-import View from './view'
+import ImageView from './image-view'
 import { FaCaretRight } from 'react-icons/fa'
 import { Link } from 'gatsby'
 
 const NavigationBar = ({ pageTitle, description }) => (
     <header className="sticky top-0 py-2 bg-white z-20 bg-white border-b border-gray-200">
-        <View>
+        <ImageView>
             <div className="w-full flex flex-row justify-start">
                 <div className="flex items-center">
                     <Link to="/#clubs">
@@ -31,7 +31,7 @@ const NavigationBar = ({ pageTitle, description }) => (
                     </div>
                 </div>
             </div>
-        </View>
+        </ImageView>
     </header>
 )
 
