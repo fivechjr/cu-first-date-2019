@@ -8,7 +8,19 @@ import Separator from '../components/common/separator'
 import ChulaEngineeringIcon from '../components/common/chula-engineering-icon'
 
 const PerClubView = ({ pageContext }) => {
-    // console.log(context)
+    const getColor = () => {
+        switch (pageContext.type.toUpperCase()) {
+            case 'ACADEMIC':
+                return 'blue'
+            case 'SPORT':
+                return 'orange'
+            default:
+                return 'gray'
+        }
+    }
+
+    const mainColor = getColor()
+
     return (
         <Layout>
             <SEO title="Home" />
@@ -19,11 +31,12 @@ const PerClubView = ({ pageContext }) => {
                         en={pageContext.type.toUpperCase()}
                         th={pageContext.name}
                         icon={<ChulaEngineeringIcon />}
+                        color={mainColor}
                     />
                     <p className="font-headline text-lg leading-loose text-gray-700">
                         {pageContext.description}
                     </p>
-                    <Separator />
+                    <Separator color={mainColor} />
                 </View>
             </section>
         </Layout>
