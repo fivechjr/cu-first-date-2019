@@ -6,7 +6,7 @@ import { IoLogoFacebook } from 'react-icons/io'
 import classNames from 'classnames'
 import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
-import { StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 
 const BackgroundSection = ({ className, imageData }) => {
     return (
@@ -59,17 +59,20 @@ const Club = ({ name, type, backgroundPosition, backgroundSize, imageData }) => 
                                     {getType(type)}
                                 </div>
                                 <div className="flex">
-                                    <p
-                                        className={classNames(
-                                            'leading-relaxed font-headline text-gray-700 border-b',
-                                            {
-                                                'border-blue-200':
-                                                    type.toUpperCase() === 'ACADEMIC',
-                                                'border-orange-200': type.toUpperCase() === 'SPORT'
-                                            }
-                                        )}>
-                                        {name}
-                                    </p>
+                                    <Link to={`/clubs/` + (name === 'Thinc.' ? 'thinc' : name)}>
+                                        <p
+                                            className={classNames(
+                                                'leading-relaxed font-headline text-gray-700 border-b',
+                                                {
+                                                    'border-blue-200':
+                                                        type.toUpperCase() === 'ACADEMIC',
+                                                    'border-orange-200':
+                                                        type.toUpperCase() === 'SPORT'
+                                                }
+                                            )}>
+                                            {name}
+                                        </p>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex">
