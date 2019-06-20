@@ -2,7 +2,7 @@ import React from 'react'
 import View from './view'
 
 const Footer = () => (
-    <footer className="bg-gray-100">
+    <footer className="bg-white">
         <View className="py-10">
             <p className="text-center font-sans text-2xs uppercase tracking-widest text-gray-600">
                 <span className="border-b pb-1 border-white">
