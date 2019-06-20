@@ -227,7 +227,7 @@ const Clubs = () => {
                                             imageData={data.LARNGEAR}
                                         />
                                         <Club
-                                            type="Academic"
+                                            type="Sport"
                                             name="ผู้นำเชียร์"
                                             imageData={data.CHEER}
                                         />
